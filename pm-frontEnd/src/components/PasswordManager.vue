@@ -15,8 +15,6 @@
         msg.value = "Salvo com sucesso!"
        
     }
-
-                </div>
 </script>
 
 <template>
