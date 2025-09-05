@@ -1,4 +1,3 @@
-package com.example.pm_backend;
 package com.example.pm_backend.Entitys;
 
 import javax.annotation.processing.Generated;
