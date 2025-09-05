@@ -1,20 +1,26 @@
-package com.example.pm_backend;
 package com.example.pm_backend.Entitys;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 public class EntityUser{
 
     @Id
-    private String UserEmail;
+     @GeneratedValue(strategy = GenerationType.IDENTITY)
+     private Long id;
+   
+
+
+      private String UserEmail;
     private String UserPassword;
 
-    public EntityUserUser(){
+    public EntityUser(){
     }
 
-    public EntityUserUser(String UserEmail, String UserPassword){
+    public EntityUser(String UserEmail, String UserPassword){
 
         this.UserEmail = UserEmail;
         this.UserPassword = UserPassword;

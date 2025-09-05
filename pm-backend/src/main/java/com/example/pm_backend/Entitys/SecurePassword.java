@@ -1,16 +1,14 @@
 package com.example.pm_backend.Entitys;
-//package com.example.pm_backend;
 
-import java.lang.annotation.Inherited;
-
-import javax.annotation.processing.Generated;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 public class SecurePassword {
     @Id
-    @GeneratedValue(Strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String GeneratedPassword;
@@ -26,14 +24,14 @@ public class SecurePassword {
 
     //Getters e setters
 
-    public GetGenerated(){
+    public String GetGenerated(){
         return GeneratedPassword;
     }
     public void SetGenerated(String GeneratedPassword){
         this.GeneratedPassword = GeneratedPassword;
     }
 
-    public GetEncrypted(){
+    public String GetEncrypted(){
         return EncryptedPassword;
     }
     public void SetEncrypted(String EncryptedPassword){

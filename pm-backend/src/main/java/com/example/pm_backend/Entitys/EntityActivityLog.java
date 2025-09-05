@@ -1,16 +1,16 @@
-package com.example.pm_backend;
 package com.example.pm_backend.Entitys;
 
-import javax.annotation.processing.Generated;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 public class EntityActivityLog {
 
 
      @Id
-     @GeneratedValue(Strategy = GenerationType.IDENTITY)
+     @GeneratedValue(strategy = GenerationType.IDENTITY)
      private Long id;
 
      String PasswordHistory;
