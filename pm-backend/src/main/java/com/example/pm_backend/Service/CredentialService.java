@@ -20,10 +20,10 @@ public class CredentialService {
         return credentialRepository.findById(id).orElse(null);
     }
     public EntityCredential save(EntityCredential credential){
-       return CredentialRepository.save(credential);
-    }
+        return credentialRepository.save(credential);
+       }
     public void delete(Long id){
-        CredentialRepository.deleteById(id); 
+        credentialRepository.deleteById(id); 
     }
 }
 
